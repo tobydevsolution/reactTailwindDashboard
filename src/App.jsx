@@ -7,7 +7,7 @@ import "../src/styles.css";
 
 function App() {
   return (
-    <main className=" grid grid-cols-[220px_1fr] ">
+    <main className=" grid grid-cols-[250px_1fr_300px] ">
       {/* Sidebar */}
       <Sidebar />
 
