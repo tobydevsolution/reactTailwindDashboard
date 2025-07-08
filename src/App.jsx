@@ -7,15 +7,16 @@ import "../src/styles.css";
 
 function App() {
   return (
-    <main className=" grid grid-cols-[250px_1fr_300px] ">
-      {/* Sidebar */}
-      <Sidebar />
+    <main className=" grid grid-cols-1 md:grid-cols-[1fr_300px] lg:grid-cols-[220px_1fr_300px] min-h-screen ">
+      <aside className="hidden lg:block">
+        <Sidebar />
+      </aside>
 
-      {/* Main Content Area */}
       <MainContent />
 
-      {/* Right Sidebar / Statistic */}
-      <RightSidebar />
+      <aside>
+        <RightSidebar />
+      </aside>
     </main>
   );
 }
