@@ -99,7 +99,7 @@ const Sidebar = () => {
             ))}
           </ul>
         </div>
-        <div className="mt-auto">
+        <div className="mt-[200px]">
           <h2 className="text-xs text-gray-400 uppercase font-semibold mb-3">
             Settings
           </h2>

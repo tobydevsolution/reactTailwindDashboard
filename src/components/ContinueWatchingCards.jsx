@@ -5,7 +5,7 @@ import {
   HeartIcon,
   CodeBracketIcon,
   PencilSquareIcon,
-  TagIcon,
+  //   TagIcon,
 } from "@heroicons/react/24/outline";
 
 const continueWatchingData = [
@@ -35,19 +35,19 @@ const continueWatchingData = [
     instructorName: "Bayu Saito",
     instructorRole: "Mentor",
   },
-  {
-    id: 3,
-    image: "https://placehold.co/400x225/FEE2E2/EF4444?text=Branding",
-    categoryIcon: TagIcon,
-    categoryName: "BRANDING",
-    categoryIconColor: "text-purple-600",
-    categoryBgColor: "bg-purple-100",
-    title: "Reviving and Refreshing Your Company Image",
-    progress: 90,
-    instructorAvatar: "https://placehold.co/40x40/D1D5DB/1F2937?text=PS",
-    instructorName: "Padhang Satrio",
-    instructorRole: "Mentor",
-  },
+  //   {
+  //     id: 3,
+  //     image: "https://placehold.co/400x225/FEE2E2/EF4444?text=Branding",
+  //     categoryIcon: TagIcon,
+  //     categoryName: "BRANDING",
+  //     categoryIconColor: "text-purple-600",
+  //     categoryBgColor: "bg-purple-100",
+  //     title: "Reviving and Refreshing Your Company Image",
+  //     progress: 90,
+  //     instructorAvatar: "https://placehold.co/40x40/D1D5DB/1F2937?text=PS",
+  //     instructorName: "Padhang Satrio",
+  //     instructorRole: "Mentor",
+  //   },
 ];
 
 const ContinueWatchingCards = () => {
@@ -73,7 +73,7 @@ const ContinueWatchingCards = () => {
         </div>
       </div>
       {/* Responsive grid for cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {continueWatchingData.map((course) => (
           <div
             key={course.id}

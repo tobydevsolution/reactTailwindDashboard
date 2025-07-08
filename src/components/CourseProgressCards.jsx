@@ -52,14 +52,14 @@ const CourseProgressCards = () => {
         {courseData.map((course) => (
           <div
             key={course.id}
-            className={`flex items-center p-3 sm:p-4 rounded-xl shadow-md bg-white border ${course.borderColor}`}
+            className={`flex items-center p-3 sm:p-4 rounded-4xl shadow-md h-24 bg-white border ${course.borderColor}`}
           >
             {/* Circular Icon Container */}
             <div
               className={`flex items-center justify-center h-10 w-10 sm:h-12 sm:w-12 rounded-full ${course.iconBgColor} mr-3 sm:mr-4`}
             >
               <course.icon
-                className={`h-5 w-5 sm:h-6 sm:w-6 ${course.iconTextColor}`}
+                className={`h-6 w-6 sm:h-6 sm:w-6 ${course.iconTextColor}`}
               />{" "}
               {/* Responsive icon size */}
             </div>
@@ -71,7 +71,7 @@ const CourseProgressCards = () => {
                 {/* Responsive text size */}
                 {course.progress}
               </p>
-              <h3 className="text-base sm:text-lg font-semibold text-gray-800">
+              <h3 className="text-base text-[.8rem] font-semibold text-gray-800">
                 {" "}
                 {/* Responsive text size */}
                 {course.title}
