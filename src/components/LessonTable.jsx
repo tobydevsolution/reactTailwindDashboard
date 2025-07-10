@@ -1,10 +1,10 @@
 import React from "react";
 import {
-  ArrowUpRightIcon, // For the action icon
-  PencilSquareIcon, // For UI/UX Design category
-  CodeBracketIcon, // For Front End category
-  TagIcon, // For Branding category
-} from "@heroicons/react/24/outline"; // Using outline style for consistency
+  ArrowUpRightIcon,
+  PencilSquareIcon,
+  CodeBracketIcon,
+  TagIcon,
+} from "@heroicons/react/24/outline";
 
 const lessonData = [
   {

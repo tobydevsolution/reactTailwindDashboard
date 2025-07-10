@@ -41,11 +41,6 @@ const CourseProgressCards = () => {
     <div className="p-4 sm:p-6 bg-gray-50 rounded-xl">
       {" "}
       {/* Removed fixed height, adjusted padding */}
-      <h1 className="text-xl sm:text-2xl font-bold text-gray-800 mb-6">
-        {" "}
-        {/* Responsive font size */}
-        Course Progress
-      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {" "}
         {/* Adjusted grid for responsiveness */}

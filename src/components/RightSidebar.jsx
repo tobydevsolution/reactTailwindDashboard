@@ -143,7 +143,7 @@ const RightSidebar = () => {
         </div>
 
         {/* Mentor List */}
-        <div className="space-y-4">
+        <div className="space-y-4 text-[.8rem]">
           {mentorData.map((mentor) => (
             <div key={mentor.id} className="flex items-center justify-between">
               <div className="flex items-center">

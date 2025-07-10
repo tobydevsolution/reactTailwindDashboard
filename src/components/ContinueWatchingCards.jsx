@@ -5,13 +5,14 @@ import {
   HeartIcon,
   CodeBracketIcon,
   PencilSquareIcon,
-  //   TagIcon,
+  ArrowRightIcon,
 } from "@heroicons/react/24/outline";
 
 const continueWatchingData = [
   {
     id: 1,
-    image: "https://placehold.co/400x225/E0E7FF/3730A3?text=Front+End",
+    image:
+      "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg",
     categoryIcon: CodeBracketIcon,
     categoryName: "FRONT END",
     categoryIconColor: "text-blue-600",
@@ -24,7 +25,8 @@ const continueWatchingData = [
   },
   {
     id: 2,
-    image: "https://placehold.co/400x225/FCE7F3/BE185D?text=UI/UX+Design",
+    image:
+      "https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg",
     categoryIcon: PencilSquareIcon,
     categoryName: "UI/UX DESIGN",
     categoryIconColor: "text-pink-600",
@@ -35,19 +37,6 @@ const continueWatchingData = [
     instructorName: "Bayu Saito",
     instructorRole: "Mentor",
   },
-  //   {
-  //     id: 3,
-  //     image: "https://placehold.co/400x225/FEE2E2/EF4444?text=Branding",
-  //     categoryIcon: TagIcon,
-  //     categoryName: "BRANDING",
-  //     categoryIconColor: "text-purple-600",
-  //     categoryBgColor: "bg-purple-100",
-  //     title: "Reviving and Refreshing Your Company Image",
-  //     progress: 90,
-  //     instructorAvatar: "https://placehold.co/40x40/D1D5DB/1F2937?text=PS",
-  //     instructorName: "Padhang Satrio",
-  //     instructorRole: "Mentor",
-  //   },
 ];
 
 const ContinueWatchingCards = () => {
