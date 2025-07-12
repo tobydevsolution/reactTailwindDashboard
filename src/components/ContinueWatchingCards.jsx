@@ -150,7 +150,7 @@ const ContinueWatchingCards = () => {
           {continueWatchingData.map((course) => (
             <div
               key={course.id}
-              className="min-w-full md:min-w-[calc(30%-12px)] lg:min-w-[calc(30%-12px)] flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 mr-6" // Added mr-6 for gap
+              className="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(70%-12px)] flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 mr-6" // Added mr-6 for gap
             >
               {/* Course Image */}
               <div className="relative">
