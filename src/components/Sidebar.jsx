@@ -1,3 +1,4 @@
+// src/components/Sidebar.jsx
 import React from "react";
 import { Sparkle } from "lucide-react";
 import {

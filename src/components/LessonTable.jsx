@@ -51,27 +51,53 @@ const lessonData = [
     typeBgColor: "bg-pink-100",
     description: "Advanced Prototyping Techniques",
   },
+  {
+    id: 5,
+    mentorAvatar: "https://placehold.co/40x40/D1D5DB/1F2937?text=AM",
+    mentorName: "Alice Miller",
+    mentorDate: "6/05/2004",
+    typeIcon: CodeBracketIcon,
+    typeName: "BACK END",
+    typeIconColor: "text-green-600",
+    typeBgColor: "bg-green-100",
+    description: "Introduction to Node.js",
+  },
+  {
+    id: 6,
+    mentorAvatar: "https://placehold.co/40x40/FFD1DC/881337?text=KB",
+    mentorName: "Kevin Brown",
+    mentorDate: "7/12/2004",
+    typeIcon: TagIcon,
+    typeName: "MARKETING",
+    typeIconColor: "text-orange-600",
+    typeBgColor: "bg-orange-100",
+    description: "Digital Marketing Strategies",
+  },
 ];
 
-const LessonTable = () => {
+const LessonTable = ({ showAllLessons, setShowAllLessons }) => {
+  const displayedLessons = showAllLessons ? lessonData : lessonData.slice(0, 3); // Show first 3 by default
+
+  const handleToggleLessons = () => {
+    setShowAllLessons(!showAllLessons);
+  };
+
   return (
     <div className="p-6 bg-gray-50 rounded-xl shadow-md">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Your Lesson</h2>
-        <a
-          href="#"
-          className="text-indigo-600 hover:underline text-sm font-semibold"
-        >
-          See all
-        </a>
+        {lessonData.length > 3 && ( // Only show "See all/less" if there are more than 3 lessons
+          <button
+            onClick={handleToggleLessons}
+            className="text-indigo-600 hover:underline text-sm font-semibold"
+          >
+            {showAllLessons ? "See less" : "See all"}
+          </button>
+        )}
       </div>
 
-      {/* Table Container - Responsive */}
       <div className="overflow-x-auto">
-        {" "}
-        {/* Allows horizontal scrolling on small screens */}
         <table className="min-w-full bg-white rounded-xl shadow-sm">
-          {/* Table Header */}
           <thead>
             <tr className="bg-gray-100 text-left text-xs font-semibold uppercase text-gray-600 tracking-wider">
               <th className="py-3 px-4 rounded-tl-xl">Mentor</th>
@@ -80,9 +106,8 @@ const LessonTable = () => {
               <th className="py-3 px-4 rounded-tr-xl text-center">Action</th>
             </tr>
           </thead>
-          {/* Table Body */}
           <tbody className="text-[.8rem]">
-            {lessonData.map((lesson) => (
+            {displayedLessons.map((lesson) => (
               <tr
                 key={lesson.id}
                 className="border-b border-gray-200 last:border-b-0"
@@ -113,7 +138,10 @@ const LessonTable = () => {
                   <div
                     className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${lesson.typeBgColor} ${lesson.typeIconColor}`}
                   >
-                    <lesson.typeIcon className="h-4 w-4 mr-1" />
+                    {/* Render the icon component dynamically */}
+                    {React.createElement(lesson.typeIcon, {
+                      className: "h-4 w-4 mr-1",
+                    })}
                     {lesson.typeName}
                   </div>
                 </td>

@@ -35,6 +35,24 @@ const RightSidebar = () => {
       role: "Mentor",
       avatar: "https://placehold.co/40x40/CCE0FF/0B3E6E?text=LS",
     },
+    {
+      id: 4,
+      name: "Mike Gill",
+      role: "Mentor",
+      avatar: "https://placehold.co/40x40/CCE0FF/0B3E6E?text=MGS",
+    },
+    {
+      id: 5,
+      name: "Lydia Burke",
+      role: "Mentor",
+      avatar: "https://placehold.co/40x40/CCE0FF/0B3E6E?text=LB",
+    },
+    {
+      id: 6,
+      name: "Greg Monk",
+      role: "Mentor",
+      avatar: "https://placehold.co/40x40/CCE0FF/0B3E6E?text=GM",
+    },
   ];
 
   return (
