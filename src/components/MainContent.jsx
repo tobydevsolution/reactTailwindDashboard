@@ -8,7 +8,7 @@ import { ArrowRightIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 const MainContent = () => {
   return (
     // Responsive padding and spacing for the entire main content area
-    <div className="bg-[#f2f2f2] min-h-full flex flex-col p-4 sm:p-6 lg:p-5 space-y-6 sm:space-y-8">
+    <div className="bg-[#f2f2f2] min-h-full flex flex-col p-4 sm:p-6 lg:p-5 min-w-0 space-y-6 sm:space-y-8">
       <SearchInput />
 
       <div className="rounded-3xl w-full bg-[#6E62E5] p-3 sm:p-6 lg:p-5 text-white min-h-[150px] sm:min-h-[200px] flex flex-col justify-center">

@@ -1,21 +1,20 @@
 import React from "react";
 import { Sparkle } from "lucide-react";
 import {
-  HomeIcon, // Equivalent to Home
-  InboxIcon, // Equivalent to Inbox
-  BookOpenIcon, // Equivalent to BookOpen
-  CheckCircleIcon, // Good replacement for Checklist (ChecklistIcon doesn't exist)
+  HomeIcon,
+  InboxIcon,
+  BookOpenIcon,
+  CheckCircleIcon,
   UsersIcon,
   Cog6ToothIcon,
-  ArrowRightEndOnRectangleIcon, // Equivalent to Users
-} from "@heroicons/react/24/outline"; // For 24x24 outline icons
+  ArrowRightEndOnRectangleIcon,
+} from "@heroicons/react/24/outline";
 
-const Sidebar = () => {
+const Sidebar = ({ activeItem, setActiveItem }) => {
   const navItems = [
     {
       name: "Dashboard",
       icon: <HomeIcon className="h-5 w-5 text-[#6E62E5]" />,
-      active: true,
     },
     { name: "Inbox", icon: <InboxIcon className="h-5 w-5 text-gray" /> },
     { name: "Lesson", icon: <BookOpenIcon className="h-5 w-5 text-gray" /> },
@@ -62,8 +61,9 @@ const Sidebar = () => {
               <li key={item.name} className="mb-2">
                 <a
                   href="#"
+                  onClick={() => setActiveItem(item.name)} // Update active item on click
                   className={`flex items-center p-3 text-[.9rem] rounded-lg ${
-                    item.active
+                    activeItem === item.name
                       ? "bg-primary text-gray shadow-md"
                       : "text-gray-700 hover:bg-gray-100"
                   }`}

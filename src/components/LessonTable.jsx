@@ -81,7 +81,7 @@ const LessonTable = () => {
             </tr>
           </thead>
           {/* Table Body */}
-          <tbody>
+          <tbody className="text-[.8rem]">
             {lessonData.map((lesson) => (
               <tr
                 key={lesson.id}
